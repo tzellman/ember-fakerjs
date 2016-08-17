@@ -1,8 +1,6 @@
 /* jshint node: true */
 'use strict';
 
-var Funnel = require('broccoli-funnel');
-var mergeTrees = require('broccoli-merge-trees');
 var defaults = require('lodash.defaults');
 var path = require('path');
 
