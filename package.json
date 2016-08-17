@@ -1,7 +1,7 @@
 {
   "name": "ember-fakerjs",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Faker.js template helpers for Ember.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,15 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/tzellman/ember-fakerjs",
+  "bugs": {
+    "url": "https://github.com/tzellman/ember-fakerjs/issues"
+  },
+  "homepage": "https://github.com/tzellman/ember-fakerjs",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Tom Zellman",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -41,7 +45,9 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "faker",
+    "fakerjs"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6"
