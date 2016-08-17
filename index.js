@@ -2,7 +2,6 @@
 'use strict';
 
 var defaults = require('lodash.defaults');
-var path = require('path');
 
 module.exports = {
     name: 'ember-fakerjs',
@@ -34,17 +33,14 @@ module.exports = {
             app.import(app.bowerDirectory + '/Faker/build/build/faker.js');
             app.import('vendor/shim.js', {
                 type: 'vendor',
-                exports: { 'faker': ['default'] }
+                exports: {'faker': ['default']}
             });
         }
     },
 
     getConfig: function () {
         var projectConfig = ((this.project.config(process.env.EMBER_ENV) || {}).faker || {});
-        var fakerPath = path.dirname(require.resolve('faker'));
-
         return defaults(projectConfig, {
-            fakerPath: fakerPath,
             enabled: false
         });
     }
