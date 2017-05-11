@@ -25,7 +25,8 @@ matrix:
 
 before_install:
   - npm config set spin false
-  - npm install -g phantomjs-prebuilt
+  - npm install -g bower phantomjs-prebuilt
+  - bower --version
   - phantomjs --version
 
 before_script:
