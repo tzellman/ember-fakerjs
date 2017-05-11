@@ -1,0 +1,32 @@
+<section>
+    <div class="title">\{{faker-sentence 10}}</div>
+    <div class="output">{{faker-sentence 10}}</div>
+</section>
+<section>
+    <div class="title">\{{faker-sentences 5}}</div>
+    <div class="output">{{faker-sentences 5}}</div>
+</section>
+<section>
+    <div class="title">\{{faker-text}}</div>
+    <div class="output">{{faker-text}}</div>
+</section>
+<section>
+    <div class="title">\{{faker-fake "\{{name.lastName}}, \{{name.firstName}} \{{name.suffix}}"}}</div>
+    <div class="output">{{faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"}}</div>
+</section>
+<section>
+    <div class="title">\{{faker-fake "\{{hacker.phrase}}"}}</div>
+    <div class="output">{{faker-fake "{{hacker.phrase}}"}}</div>
+</section>
+
+{{#with (faker-fake "{{internet.color}}") as |color|}}
+    <section style="background-color: {{color}}">
+        <div class="title">\{{faker-fake "\{{internet.color}}"}}</div>
+        <div class="output">{{color}}</div>
+    </section>
+{{/with}}
+<section>
+    <div class="title">\{{faker-fake "\{{image.cats}}"}}</div>
+    <div class="output"><img src={{faker-fake "{{image.cats}}"}}></div>
+</section>
+

@@ -1,7 +1,5 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
-
-var defaults = require('lodash.defaults');
 
 module.exports = {
     name: 'ember-fakerjs',
@@ -40,9 +38,10 @@ module.exports = {
 
     getConfig: function () {
         var projectConfig = ((this.project.config(process.env.EMBER_ENV) || {}).faker || {});
-        return defaults(projectConfig, {
-            enabled: false
-        });
+        if (!projectConfig.hasOwnProperty("enabled")) {
+            projectConfig.enabled = false;
+        }
+        return projectConfig;
     }
 
 };

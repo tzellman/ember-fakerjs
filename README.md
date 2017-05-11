@@ -6,6 +6,8 @@
 
 [Faker.js](https://github.com/marak/Faker.js/) template helpers.
 
+[Live Demo](https://tzellman.github.io/ember-fakerjs/)
+
 ## Requirements
 * Ember >= 1.13.0
 * Ember CLI
@@ -74,6 +76,7 @@ module.exports = function() {
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -81,7 +84,7 @@ module.exports = function() {
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 [npm]: https://www.npmjs.org/package/ember-fakerjs
 [npm-badge]: https://img.shields.io/npm/v/ember-fakerjs.svg?style=flat-square
