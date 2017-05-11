@@ -3,7 +3,6 @@
 [![Build Status][travis-badge]][travis]
 [![Ember Observer Score](http://emberobserver.com/badges/ember-fakerjs.svg)](http://emberobserver.com/addons/ember-fakerjs)
 [![Dependency Status](https://david-dm.org/tzellman/ember-fakerjs.svg)](https://david-dm.org/tzellman/ember-fakerjs)
-[![Ember badge][ember-badge]][embadge]
 
 [Faker.js](https://github.com/marak/Faker.js/) template helpers.
 
@@ -91,5 +90,3 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 [npm-badge]: https://img.shields.io/npm/v/ember-fakerjs.svg?style=flat-square
 [travis]: https://travis-ci.org/tzellman/ember-fakerjs
 [travis-badge]: https://img.shields.io/travis/tzellman/ember-fakerjs.svg?branch=master&style=flat-square
-[embadge]: http://embadge.io/
-[ember-badge]: http://embadge.io/v1/badge.svg?start=2.4.0
