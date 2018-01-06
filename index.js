@@ -1,47 +1,54 @@
 /* eslint-env node */
 'use strict';
 
+var path = require('path');
+
 module.exports = {
-    name: 'ember-fakerjs',
+  name: 'ember-fakerjs',
 
-    included: function (app) {
-
-        // see: https://github.com/ember-cli/ember-cli/issues/3718
-        while (typeof app.import !== 'function' && app.app) {
-            app = app.app;
-        }
-
-        this.app = app;
-        this.fakerOptions = this.getConfig();
-        this.importDeps(app);
-        return app;
-    },
-
-    importDeps: function (app) {
-        if (arguments.length < 1) {
-            throw new Error('Application instance must be passed to import');
-        }
-
-        var vendor = this.treePaths.vendor;
-        var options = this.fakerOptions;
-
-        // TODO update this to handle Faker locale support, and options
-
-        if (app.env !== 'production' || options.enabled) {
-            app.import(app.bowerDirectory + '/Faker/build/build/faker.js');
-            app.import('vendor/shim.js', {
-                type: 'vendor',
-                exports: {'faker': ['default']}
-            });
-        }
-    },
-
-    getConfig: function () {
-        var projectConfig = ((this.project.config(process.env.EMBER_ENV) || {}).faker || {});
-        if (!projectConfig.hasOwnProperty("enabled")) {
-            projectConfig.enabled = false;
-        }
-        return projectConfig;
+  included: function (app) {
+    // see: https://github.com/ember-cli/ember-cli/issues/3718
+    while (typeof app.import !== 'function' && app.app) {
+      app = app.app;
     }
+
+    this.app = app;
+    var opts = this.getConfig();
+    if (opts.enabled) {
+      app.import('vendor/faker/faker.js');
+      app.import('vendor/shims/faker.js');
+    }
+  },
+
+  treeForVendor: function (tree) {
+    var Funnel = require('broccoli-funnel');
+    var MergeTrees = require('broccoli-merge-trees');
+
+    this._findFaker();
+
+    let fakerTree = new Funnel(path.join(path.dirname(this._fakerPath), 'build/build'), {
+      files: ['faker.js'],
+      destDir: '/faker'
+    });
+
+    return new MergeTrees([tree, fakerTree].filter(Boolean), {
+      annotation: 'ember-fakerjs: treeForVendor'
+    });
+  },
+
+  _findFaker: function () {
+    if (!this._fakerPath) {
+      var resolve = require('resolve');
+      this._fakerPath = resolve.sync('faker');
+    }
+  },
+
+  getConfig: function () {
+    var projectConfig = ((this.project.config(process.env.EMBER_ENV) || {}).faker || {});
+    if (!Object.prototype.hasOwnProperty.call(projectConfig, "enabled")) {
+      projectConfig.enabled = false;
+    }
+    return projectConfig;
+  }
 
 };

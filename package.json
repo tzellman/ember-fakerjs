@@ -24,10 +24,13 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.6.0",
+    "faker": "git+https://github.com/Marak/faker.js.git",
+    "resolve": "^1.5.0"
   },
   "devDependencies": {
-    "bower": "^1.8.2",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.16.2",

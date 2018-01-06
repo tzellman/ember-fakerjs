@@ -1,6 +1,0 @@
-{
-  "name": "ember-fakerjs",
-  "dependencies": {
-    "Faker": "^4.1.0"
-  }
-}
