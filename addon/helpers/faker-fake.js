@@ -1,8 +1,8 @@
-import Ember from 'ember';
+import {helper} from '@ember/component/helper';
 import faker from "faker";
 
 export function fakerFake([string]) {
   return faker.fake(string);
 }
 
-export default Ember.Helper.helper(fakerFake);
+export default helper(fakerFake);

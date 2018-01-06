@@ -1,1 +1,1 @@
-export { default, fakerText } from 'ember-fakerjs/helpers/faker-text';
+export {default, fakerText} from 'ember-fakerjs/helpers/faker-text';

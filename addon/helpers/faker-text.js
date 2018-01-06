@@ -1,8 +1,8 @@
-import Ember from "ember";
+import {helper} from '@ember/component/helper';
 import faker from "faker";
 
 export function fakerText([times]) {
-    return faker.lorem.text(times);
+  return faker.lorem.text(times);
 }
 
-export default Ember.Helper.helper(fakerText);
+export default helper(fakerText);
