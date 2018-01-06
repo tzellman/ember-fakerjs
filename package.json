@@ -1,11 +1,15 @@
 {
   "name": "ember-fakerjs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Faker.js template helpers for Ember.",
   "keywords": [
     "ember-addon",
     "faker",
-    "fakerjs"
+    "fakerjs",
+    "fake",
+    "fixture",
+    "fixtures",
+    "data"
   ],
   "license": "MIT",
   "author": "Tom Zellman",
