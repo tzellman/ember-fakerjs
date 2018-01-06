@@ -6,7 +6,7 @@
 
 [Faker.js](https://github.com/marak/Faker.js/) template helpers.
 
-##[Live Demo](https://tzellman.github.io/ember-fakerjs/)
+## [Live Demo](https://tzellman.github.io/ember-fakerjs/)
 
 ## Requirements
 * Ember >= 1.13.0
@@ -69,7 +69,6 @@ module.exports = function() {
 
 * `git clone` this repository
 * `npm install`
-* `bower install`
 * `ember serve`
 * Visit your app at http://localhost:4200.
 
