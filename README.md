@@ -1,33 +1,35 @@
-# ember-fakerjs
-[![npm Version][npm-badge]][npm]
-[![Build Status][travis-badge]][travis]
-[![Ember Observer Score](http://emberobserver.com/badges/ember-fakerjs.svg)](http://emberobserver.com/addons/ember-fakerjs)
-[![Dependency Status](https://david-dm.org/tzellman/ember-fakerjs.svg)](https://david-dm.org/tzellman/ember-fakerjs)
+# ember-stopwatch
+
+[![NPM][npm-badge-img]][npm-badge-link]
+[![Build Status][build-status-img]][build-status-link]
+[![Ember Observer Score][ember-observer-badge]][ember-observer-url]
+[![Ember Version][ember-version]][ember-version-url]
+[![Download count][npm-downloads-img]][npm-badge-link]
+[![Code Climate][climate-badge]][climate-badge-url]
+[![Test Coverage][coverage-badge]][coverage-badge-url]
 
 [Faker.js](https://github.com/marak/Faker.js/) template helpers.
 
-## [Live Demo](https://tzellman.github.io/ember-fakerjs/)
+This addon provides helpers that can assist with adding fake/fixture data to your applications.
+This can be especially useful when scaffolding your application or building demos.
 
-## Requirements
-* Ember >= 1.13.0
-* Ember CLI
+## Installation
 
-## Installing
-
-```bash
+```
 ember install ember-fakerjs
 ```
 
-* `git clone` this repository
-* `npm install`
+## Demo
+
+[Demo](https://tzellman.github.io/ember-fakerjs/)
 
 ## Usage
 
-## Helpers
+### Helpers
 
 The main helper is `faker-fake`. You can use this to generate content using the entire faker API.
 
-Ships with the following helpers: `faker-fake`, `faker-sentence`, `faker-sentences`, `faker-text`.
+The addon ships with the following helpers: `faker-fake`, `faker-sentence`, `faker-sentences`, `faker-text`.
 
 Example usage:
 
@@ -45,46 +47,33 @@ Example usage:
 This addon provides the ability to import faker as an ES6 module.
 
 ```js
-import faker from 'faker';
+import faker from "faker";
 ```
 
-## Configuration Options
+## Compatibility
 
-### Global Default Output Format
+-   Ember.js v3.12 or above
+-   Ember CLI v2.13 or above
+-   Node.js v10 or above
 
-Faker support is disabled in production environments. You can override this by enabling it.
+## Contributing
 
-```js
-// config/environment.js
-module.exports = function() {
-  return {
-    faker: {
-      enabled: true
-    }
-  }
-};
-```
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-## Development
+## License
 
-* `git clone` this repository
-* `npm install`
-* `ember serve`
-* Visit your app at http://localhost:4200.
+This project is licensed under the [MIT License](LICENSE.md).
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-[npm]: https://www.npmjs.org/package/ember-fakerjs
-[npm-badge]: https://img.shields.io/npm/v/ember-fakerjs.svg?style=flat-square
-[travis]: https://travis-ci.org/tzellman/ember-fakerjs
-[travis-badge]: https://img.shields.io/travis/tzellman/ember-fakerjs.svg?branch=master&style=flat-square
+[npm-badge-img]: https://badge.fury.io/js/ember-fakerjs.svg
+[npm-badge-link]: http://badge.fury.io/js/ember-fakerjs
+[build-status-img]: https://github.com/tzellman/ember-fakerjs/workflows/Build/badge.svg?branch=master&event=push
+[build-status-link]: https://github.com/tzellman/ember-fakerjs/actions?query=workflow%3A%22Build%22
+[npm-downloads-img]: https://img.shields.io/npm/dt/ember-fakerjs.svg
+[ember-observer-badge]: http://emberobserver.com/badges/ember-fakerjs.svg
+[ember-observer-url]: http://emberobserver.com/addons/ember-fakerjs
+[ember-version]: https://img.shields.io/badge/Ember-3.12%2B-brightgreen.svg
+[ember-version-url]: https://blog.emberjs.com/2019/08/16/ember-3-12-released.html
+[coverage-badge]: https://codeclimate.com/github/tzellman/ember-fakerjs/badges/coverage.svg
+[coverage-badge-url]: https://codeclimate.com/github/tzellman/ember-fakerjs/test_coverage
+[climate-badge]: https://codeclimate.com/github/tzellman/ember-fakerjs/badges/gpa.svg
+[climate-badge-url]: https://codeclimate.com/github/tzellman/ember-fakerjs
