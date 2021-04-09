@@ -1,8 +1,6 @@
-import {helper} from '@ember/component/helper';
-import faker from "faker";
+import { helper } from '@ember/component/helper';
+import faker from 'faker';
 
-export function fakerSentence([wordCount]) {
-  return faker.lorem.sentence(wordCount);
-}
-
-export default helper(fakerSentence);
+export default helper(function fakerSentence([wordCount] /*, hash*/) {
+    return faker.lorem.sentence(wordCount);
+});

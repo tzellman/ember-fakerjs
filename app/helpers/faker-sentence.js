@@ -1,1 +1,1 @@
-export {default, fakerSentence} from 'ember-fakerjs/helpers/faker-sentence';
+export { default } from 'ember-fakerjs/helpers/faker-sentence';

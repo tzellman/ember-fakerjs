@@ -1,8 +1,6 @@
-import {helper} from '@ember/component/helper';
-import faker from "faker";
+import { helper } from '@ember/component/helper';
+import faker from 'faker';
 
-export function fakerFake([string]) {
-  return faker.fake(string);
-}
-
-export default helper(fakerFake);
+export default helper(function fakerFake([expression] /*, hash*/) {
+    return faker.fake(expression);
+});
