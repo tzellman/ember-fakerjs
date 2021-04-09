@@ -1,0 +1,52 @@
+"use strict"
+function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}define("dummy/app",["exports","ember-resolver","ember-load-initializers","dummy/config/environment"],(function(e,t,n,r){function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function l(e,t){return(l=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function i(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+if(Reflect.construct.sham)return!1
+if("function"==typeof Proxy)return!0
+try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}()
+return function(){var n,r=a(e)
+if(t){var o=a(this).constructor
+n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
+return f(this,n)}}function f(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?u(e):t}function u(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return e}function a(e){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function c(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var p=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
+e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&l(e,t)})(f,Ember.Application)
+var n=i(f)
+function f(){var e
+o(this,f)
+for(var l=arguments.length,i=new Array(l),a=0;a<l;a++)i[a]=arguments[a]
+return c(u(e=n.call.apply(n,[this].concat(i))),"modulePrefix",r.default.modulePrefix),c(u(e),"podModulePrefix",r.default.podModulePrefix),c(u(e),"Resolver",t.default),e}return f}()
+e.default=p,(0,n.default)(p,r.default.modulePrefix)})),define("dummy/component-managers/glimmer",["exports","@glimmer/component/-private/ember-component-manager"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/helpers/faker-fake",["exports","ember-fakerjs/helpers/faker-fake"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/helpers/faker-sentence",["exports","ember-fakerjs/helpers/faker-sentence"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/helpers/faker-sentences",["exports","ember-fakerjs/helpers/faker-sentences"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/helpers/faker-text",["exports","ember-fakerjs/helpers/faker-text"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/helpers/page-title",["exports","ember-page-title/helpers/page-title"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var n=t.default
+e.default=n})),define("dummy/initializers/container-debug-adapter",["exports","ember-resolver/resolvers/classic/container-debug-adapter"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var n={name:"container-debug-adapter",initialize:function(){var e=arguments[1]||arguments[0]
+e.register("container-debug-adapter:main",t.default),e.inject("container-debug-adapter:main","namespace","application:main")}}
+e.default=n})),define("dummy/initializers/export-application-global",["exports","dummy/config/environment"],(function(e,t){function n(){var e=arguments[1]||arguments[0]
+if(!1!==t.default.exportApplicationGlobal){var n
+if("undefined"!=typeof window)n=window
+else if("undefined"!=typeof global)n=global
+else{if("undefined"==typeof self)return
+n=self}var r,o=t.default.exportApplicationGlobal
+r="string"==typeof o?o:Ember.String.classify(t.default.modulePrefix),n[r]||(n[r]=e,e.reopen({willDestroy:function(){this._super.apply(this,arguments),delete n[r]}}))}}Object.defineProperty(e,"__esModule",{value:!0}),e.initialize=n,e.default=void 0
+var r={name:"export-application-global",initialize:n}
+e.default=r})),define("dummy/router",["exports","dummy/config/environment"],(function(e,t){function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function r(e,t){return(r=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function o(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+if(Reflect.construct.sham)return!1
+if("function"==typeof Proxy)return!0
+try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}()
+return function(){var n,r=f(e)
+if(t){var o=f(this).constructor
+n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
+return l(this,n)}}function l(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?i(e):t}function i(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return e}function f(e){return(f=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function u(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var a=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
+e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&r(e,t)})(f,Ember.Router)
+var l=o(f)
+function f(){var e
+n(this,f)
+for(var r=arguments.length,o=new Array(r),a=0;a<r;a++)o[a]=arguments[a]
+return u(i(e=l.call.apply(l,[this].concat(o))),"location",t.default.locationType),u(i(e),"rootURL",t.default.rootURL),e}return f}()
+e.default=a,a.map((function(){}))})),define("dummy/services/page-title-list",["exports","ember-page-title/services/page-title-list"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/services/page-title",["exports","ember-page-title/services/page-title"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("dummy/templates/application",["exports"],(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var t=Ember.HTMLBars.template({id:"IcThn60W",block:'[[[1,[28,[35,0],["ember-fakerjs Demo"],null]],[1,"\\n\\n"],[10,"main"],[14,0,"bg-indigo-400 h-full w-full flex flex-col"],[12],[1,"\\n    "],[46,[28,[37,2],null,null],null,null,null],[1,"\\n"],[13]],[],false,["page-title","component","-outlet"]]',moduleName:"dummy/templates/application.hbs",isStrictMode:!1})
+e.default=t})),define("dummy/templates/index",["exports"],(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+var t=Ember.HTMLBars.template({id:"9fSvGuRZ",block:'[[[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-sentence 10}}"],[13],[1,"\\n    "],[10,0],[12],[1,[28,[35,0],[10],null]],[13],[1,"\\n"],[13],[1,"\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-sentences 5}}"],[13],[1,"\\n    "],[10,0],[12],[1,[28,[35,1],[5],null]],[13],[1,"\\n"],[13],[1,"\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-text}}"],[13],[1,"\\n    "],[10,0],[12],[1,[34,2]],[13],[1,"\\n"],[13],[1,"\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-fake \\""],[1,"{{name.lastName}}, "],[1,"{{name.firstName}} "],[1,"{{name.suffix}}\\"}}"],[13],[1,"\\n    "],[10,0],[12],[1,[28,[35,3],["{{name.lastName}}, {{name.firstName}} {{name.suffix}}"],null]],[13],[1,"\\n"],[13],[1,"\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-fake \\""],[1,"{{hacker.phrase}}\\"}}"],[13],[1,"\\n    "],[10,0],[12],[1,[28,[35,3],["{{hacker.phrase}}"],null]],[13],[1,"\\n"],[13],[1,"\\n\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-fake \\""],[1,"{{internet.color}}\\"}}"],[13],[1,"\\n"],[43,[28,[37,3],["{{internet.color}}"],null],[[[1,"        "],[10,0],[14,0,"py-4 px-1"],[15,5,[28,[37,5],[[28,[37,6],["background-color: ",[30,1]],null]],null]],[12],[1,[30,1]],[13],[1,"\\n"]],[1]],null],[13],[1,"\\n\\n"],[10,"section"],[14,0,"bg-white p-3 m-4 flex flex-col"],[12],[1,"\\n    "],[10,0],[14,0,"text-xl font-bold pb-1"],[12],[1,"{{faker-fake \\""],[1,"{{image.cats}}\\"}}"],[13],[1,"\\n    "],[10,0],[12],[10,"img"],[14,0,"w-64"],[15,"src",[28,[37,3],["{{image.cats}}"],null]],[14,"alt","fake"],[12],[13],[13],[1,"\\n"],[13],[1,"\\n"]],["color"],false,["faker-sentence","faker-sentences","faker-text","faker-fake","with","html-safe","concat"]]',moduleName:"dummy/templates/index.hbs",isStrictMode:!1})
+e.default=t})),define("dummy/config/environment",[],(function(){try{var e="dummy/config/environment",t=document.querySelector('meta[name="'+e+'"]').getAttribute("content"),n={default:JSON.parse(decodeURIComponent(t))}
+return Object.defineProperty(n,"__esModule",{value:!0}),n}catch(r){throw new Error('Could not read config from meta tag with name "'+e+'".')}})),runningTests||require("dummy/app").default.create({})
