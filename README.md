@@ -30,14 +30,14 @@ ember install ember-fakerjs
 The list of helpers available are:
 
 -   `faker-fake` use this to generate content by directly using the `faker` API
--   `random` utility that provides parameterized access to the `random` subsection of the `faker` API
+-   `faker-random` utility that provides parameterized access to the `random` subsection of the `faker` API
 -   `faker-text`, `faker-sentence`, `faker-sentences` - generate lorem content
 
 Example usage:
 
 ```hbs
-{{random "number" max=100}}
-{{random "arrayelement" array("Link" "Ganon" "Zelda")}}
+{{faker-random "number" max=100}}
+{{faker-random "arrayelement" array("Link" "Ganon" "Zelda")}}
 {{faker-sentence 10}} {{!-- create a 10-word sentence --}}
 {{faker-sentences 5}} {{!-- create a 5-sentence string --}}
 <img src={{faker-fake "{{image.avatar}}"}} alt="avatar">
