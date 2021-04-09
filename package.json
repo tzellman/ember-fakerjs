@@ -1,6 +1,6 @@
 {
   "name": "ember-fakerjs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Faker.js template helpers for Ember.",
   "keywords": [
     "ember-addon",
@@ -9,7 +9,8 @@
     "fake",
     "fixture",
     "fixtures",
-    "data"
+    "data",
+    "random"
   ],
   "repository": "https://github.com/tzellman/ember-fakerjs.git",
   "license": "MIT",

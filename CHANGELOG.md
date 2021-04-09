@@ -1,5 +1,14 @@
 # Changelog
 
+### 0.4.0
+
+This release includes a `random` helper for accessing the `faker` random utilities.
+
+#### Changes
+
+-   Added `random` helper
+-   Updated README
+
 ### 0.3.0
 
 This release updates the addon to the latest Ember CLI 3.25 blueprint.
