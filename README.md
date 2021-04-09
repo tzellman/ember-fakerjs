@@ -36,8 +36,8 @@ Example usage:
 ```hbs
 {{faker-sentence 10}} {{!-- create a 10-word sentence --}}
 {{faker-sentences 5}} {{!-- create a 5-sentence string --}}
-<img src={{faker-fake "{{image.avatar}}"}}>
-<a href='mailto:{{faker-fake "{{internet.email}}"}}'>
+<img src={{faker-fake "{{image.avatar}}"}} alt="avatar">
+<a href={{concat "mailto:" (faker-fake "{{internet.email}}")}}>Send Email!</a>
 {{faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"}}
 {{faker-text 10}} {{!-- create a random variation of lorem that repeats 10 times --}}
 ```

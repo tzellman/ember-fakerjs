@@ -3,6 +3,7 @@
 /tmp/
 /.idea
 /*.iml
+/coverage
 
 # dependencies
 /bower_components/
