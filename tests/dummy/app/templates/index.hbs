@@ -1,32 +1,34 @@
-<section class="bg-white p-3 m-4 flex flex-col">
-    <div class="text-xl font-bold pb-1">\{{faker-sentence 10}}</div>
-    <div>{{faker-sentence 10}}</div>
+<section class="bg-white px-3 flex flex-col rounded-md">
+    <div class="text-xl font-bold pb-1">\{{faker-random "arrayElement" (array "Link" "Ganon" "Zelda")}}</div>
+    <div>{{faker-random "arrayElement" (array "Link" "Ganon" "Zelda")}}</div>
 </section>
-<section class="bg-white p-3 m-4 flex flex-col">
-    <div class="text-xl font-bold pb-1">\{{faker-sentences 5}}</div>
-    <div>{{faker-sentences 5}}</div>
-</section>
-<section class="bg-white p-3 m-4 flex flex-col">
-    <div class="text-xl font-bold pb-1">\{{faker-text}}</div>
-    <div>{{faker-text}}</div>
-</section>
-<section class="bg-white p-3 m-4 flex flex-col">
+<section class="bg-white p-3 flex flex-col rounded-md">
     <div class="text-xl font-bold pb-1">\{{faker-fake "\{{name.lastName}}, \{{name.firstName}} \{{name.suffix}}"}}</div>
     <div>{{faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"}}</div>
 </section>
-<section class="bg-white p-3 m-4 flex flex-col">
+<section class="bg-white p-3 flex flex-col rounded-md">
     <div class="text-xl font-bold pb-1">\{{faker-fake "\{{hacker.phrase}}"}}</div>
     <div>{{faker-fake "{{hacker.phrase}}"}}</div>
 </section>
-
-<section class="bg-white p-3 m-4 flex flex-col">
+<section class="bg-white p-3 flex flex-col rounded-md">
+    <div class="text-xl font-bold pb-1">\{{faker-sentence 10}}</div>
+    <div>{{faker-sentence 10}}</div>
+</section>
+<section class="bg-white p-3 flex flex-col rounded-md">
+    <div class="text-xl font-bold pb-1">\{{faker-sentences 5}}</div>
+    <div>{{faker-sentences 5}}</div>
+</section>
+<section class="bg-white p-3 flex flex-col rounded-md">
+    <div class="text-xl font-bold pb-1">\{{faker-text}}</div>
+    <div>{{faker-text}}</div>
+</section>
+<section class="bg-white p-3 flex flex-col rounded-md">
     <div class="text-xl font-bold pb-1">\{{faker-fake "\{{internet.color}}"}}</div>
     {{#with (faker-fake "{{internet.color}}") as |color|}}
         <div class="py-4 px-1" style={{html-safe (concat "background-color: " color)}}>{{color}}</div>
     {{/with}}
 </section>
-
-<section class="bg-white p-3 m-4 flex flex-col">
+<section class="bg-white p-3 flex flex-col rounded-md">
     <div class="text-xl font-bold pb-1">\{{faker-fake "\{{image.cats}}"}}</div>
-    <div><img class="w-64" src={{faker-fake "{{image.cats}}"}} alt="fake"></div>
+    <div><img class="w-32" src={{faker-fake "{{image.cats}}"}} alt="fake"></div>
 </section>

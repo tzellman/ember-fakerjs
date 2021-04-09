@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.4.1
+
+#### Changes
+
+-   Renamed `random` helper to `faker-random`, to avoid clash with `ember-math-helpers`
+
 ### 0.4.0
 
 This release includes a `random` helper for accessing the `faker` random utilities.

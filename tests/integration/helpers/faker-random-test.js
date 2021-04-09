@@ -25,15 +25,15 @@ module('Integration | Helper | random', function (hooks) {
         ];
         for (const method of methods) {
             this.set('method', method);
-            await render(hbs`{{random method}}`);
+            await render(hbs`{{faker-random method}}`);
             assert.ok(this.element.textContent.trim(), 'renders content');
         }
     });
 
     test('it renders specific values', async function (assert) {
-        await render(hbs`{{random "arrayelement" (array 1 2 3)}}`);
+        await render(hbs`{{faker-random "arrayelement" (array 1 2 3)}}`);
         assert.ok(/[1-3]/.test(this.element.textContent.trim()), 'arrayelement');
-        await render(hbs`{{random "notsupported"}}`);
+        await render(hbs`{{faker-random "notsupported"}}`);
         assert.notOk(this.element.textContent.trim(), 'should be empty');
     });
 });

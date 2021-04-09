@@ -1,7 +1,7 @@
 import { helper } from '@ember/component/helper';
 import faker from 'faker';
 
-export default helper(function random(params, hash) {
+export default helper(function fakerRandom(params, hash) {
     const method = params.length > 0 ? params[0].toLowerCase() : undefined;
     const options = { ...(hash ?? {}) };
     switch (method) {
