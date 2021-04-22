@@ -25,6 +25,10 @@
             "paths": ["+(package.json)"],
             "rangeStrategy": "bump",
             "ignoreDeps": ["ember-cli", "tailwindcss"]
+        },
+        {
+            "matchPackageNames": ["husky"],
+            "allowedVersions": "<5"
         }
     ],
     "enabledManagers": ["npm"],
