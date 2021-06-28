@@ -14,11 +14,13 @@ module('Integration | Helper | faker-sentence', function (hooks) {
     };
 
     test('1 word', async function (assert) {
+        assert.expect(3);
         await render(hbs`{{faker-sentence 1}}`);
         expectWords(assert, this.element, 1);
     });
 
     test('multiple words', async function (assert) {
+        assert.expect(3);
         await render(hbs`{{faker-sentence 2}}`);
         expectWords(assert, this.element, 2);
     });
