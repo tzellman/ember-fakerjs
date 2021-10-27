@@ -32,7 +32,7 @@ if(!i||"new"===i.state)return(i=new s(e,[],l,null)).module.exports=a,i.state="fi
  *            Portions Copyright 2008-2011 Apple Inc. All rights reserved.
  * @license   Licensed under MIT license
  *            See https://raw.github.com/emberjs/ember.js/master/LICENSE
- * @version   3.28.1
+ * @version   3.28.4
  */
 var e,a;(function(){var i="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:null
 if(null===i)throw new Error("unable to locate global object")
@@ -3253,7 +3253,7 @@ return n.Adapter=r,n.QUnitAdapter=o,Object.defineProperty(V,"Test",{configurable
 var I=V
 a.default=I})),e("ember/version",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-e.default="3.28.1"})),e("route-recognizer",["exports"],(function(e){"use strict"
+e.default="3.28.4"})),e("route-recognizer",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var a=Object.create
 function i(){var e=a(null)
