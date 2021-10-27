@@ -1,34 +1,34 @@
-<section class="bg-white px-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-random "arrayElement" (array "Link" "Ganon" "Zelda")'}}</div>
+<ExampleSection>
+    <Snippet @code={{concat 'faker-random "arrayElement" (array "Link" "Ganon" "Zelda")'}} />
     <div>{{faker-random "arrayElement" (array "Link" "Ganon" "Zelda")}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code={{concat 'faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"'}} />
     <div>{{faker-fake "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-fake "{{hacker.phrase}}"'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code={{concat 'faker-fake "{{hacker.phrase}}"'}} />
     <div>{{faker-fake "{{hacker.phrase}}"}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-sentence 10'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code="faker-sentence 10" />
     <div>{{faker-sentence 10}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-sentences 5'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code="faker-sentences 5" />
     <div>{{faker-sentences 5}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-text'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code="faker-text" />
     <div>{{faker-text}}</div>
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-fake "{{internet.color}}"'}}</div>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code={{concat 'faker-fake "{{internet.color}}"'}} />
     {{#with (faker-fake "{{internet.color}}") as |color|}}
         <div class="py-4 px-1" style={{html-safe (concat "background-color: " color)}}>{{color}}</div>
     {{/with}}
-</section>
-<section class="bg-white p-3 flex flex-col rounded-md">
-    <div class="text-xl font-bold pb-1">{{code-snippet 'faker-fake "{{image.cats}}"'}}</div>
-    <div><img class="w-32" src={{faker-fake "{{image.cats}}"}} alt="fake"></div>
-</section>
+</ExampleSection>
+<ExampleSection>
+    <Snippet @code={{concat 'faker-fake "{{image.cats}}"'}} />
+    <div><img class="w-32" src={{faker-fake "{{image.cats}}"}} alt="fake" /></div>
+</ExampleSection>
