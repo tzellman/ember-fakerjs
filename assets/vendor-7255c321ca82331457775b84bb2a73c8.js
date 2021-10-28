@@ -3765,20 +3765,20 @@ if(!i)throw new Error(e+" must export an initializer.")
 var n=i.default
 if(!n)throw new Error(e+" must have a default export")
 return n.name||(n.name=e.slice(e.lastIndexOf("/")+1)),n}function n(e,a){return-1!==e.indexOf(a,e.length-a.length)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(e,a){for(var r=a+"/initializers/",o=a+"/instance-initializers/",t=[],s=[],l=Object.keys(requirejs._eak_seen),u=0;u<l.length;u++){var c=l[u]
-0===c.lastIndexOf(r,0)?n(c,"-test")||t.push(c):0===c.lastIndexOf(o,0)&&(n(c,"-test")||s.push(c))}(function(e,a){for(var n=0;n<a.length;n++)e.initializer(i(a[n]))})(e,t),function(e,a){for(var n=0;n<a.length;n++)e.instanceInitializer(i(a[n]))}(e,s)}})),define("ember-page-title/helpers/page-title",["exports","@ember/service","@ember/component/helper","@ember/object/internals","@ember/polyfills"],(function(e,a,i,n,r){"use strict"
-var o,t,s
+0===c.lastIndexOf(r,0)?n(c,"-test")||t.push(c):0===c.lastIndexOf(o,0)&&(n(c,"-test")||s.push(c))}(function(e,a){for(var n=0;n<a.length;n++)e.initializer(i(a[n]))})(e,t),function(e,a){for(var n=0;n<a.length;n++)e.instanceInitializer(i(a[n]))}(e,s)}})),define("ember-page-title/helpers/page-title",["exports","@ember/service","@ember/component/helper","@ember/object/internals"],(function(e,a,i,n){"use strict"
+var r,o,t
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-let l=(o=(0,a.inject)("page-title-list"),t=class extends i.default{get tokenId(){return(0,n.guidFor)(this)}constructor(){var e,a,i,n
-super(...arguments),e=this,a="tokens",n=this,(i=s)&&Object.defineProperty(e,a,{enumerable:i.enumerable,configurable:i.configurable,writable:i.writable,value:i.initializer?i.initializer.call(n):void 0}),this.tokens.push({id:this.tokenId})}compute(e,a){let i=(0,r.assign)({},a,{id:this.tokenId,title:e.join("")})
-return this.tokens.push(i),this.tokens.scheduleTitleUpdate(),""}willDestroy(){super.willDestroy(),this.tokens.remove(this.tokenId),this.tokens.scheduleTitleUpdate()}},u=t.prototype,c="tokens",d=[o],m={configurable:!0,enumerable:!0,writable:!0,initializer:null},h={},Object.keys(m).forEach((function(e){h[e]=m[e]})),h.enumerable=!!h.enumerable,h.configurable=!!h.configurable,("value"in h||h.initializer)&&(h.writable=!0),h=d.slice().reverse().reduce((function(e,a){return a(u,c,e)||e}),h),p&&void 0!==h.initializer&&(h.value=h.initializer?h.initializer.call(p):void 0,h.initializer=void 0),void 0===h.initializer&&(Object.defineProperty(u,c,h),h=null),s=h,t)
-var u,c,d,m,p,h
-e.default=l})),define("ember-page-title/services/page-title-list",["exports","@ember/application","@ember/runloop","@ember/service","@ember/utils","@ember/polyfills","@ember/debug"],(function(e,a,i,n,r,o,t){"use strict"
-var s,l,u,c,d,m
+let s=(r=(0,a.inject)("page-title-list"),o=class extends i.default{get tokenId(){return(0,n.guidFor)(this)}constructor(){var e,a,i,n
+super(...arguments),e=this,a="tokens",n=this,(i=t)&&Object.defineProperty(e,a,{enumerable:i.enumerable,configurable:i.configurable,writable:i.writable,value:i.initializer?i.initializer.call(n):void 0}),this.tokens.push({id:this.tokenId})}compute(e,a){let i={...a,id:this.tokenId,title:e.join("")}
+return this.tokens.push(i),this.tokens.scheduleTitleUpdate(),""}willDestroy(){super.willDestroy(),this.tokens.remove(this.tokenId),this.tokens.scheduleTitleUpdate()}},l=o.prototype,u="tokens",c=[r],d={configurable:!0,enumerable:!0,writable:!0,initializer:null},p={},Object.keys(d).forEach((function(e){p[e]=d[e]})),p.enumerable=!!p.enumerable,p.configurable=!!p.configurable,("value"in p||p.initializer)&&(p.writable=!0),p=c.slice().reverse().reduce((function(e,a){return a(l,u,e)||e}),p),m&&void 0!==p.initializer&&(p.value=p.initializer?p.initializer.call(m):void 0,p.initializer=void 0),void 0===p.initializer&&(Object.defineProperty(l,u,p),p=null),t=p,o)
+var l,u,c,d,m,p
+e.default=s})),define("ember-page-title/services/page-title-list",["exports","@ember/application","@ember/runloop","@ember/service","@ember/utils","@ember/debug"],(function(e,a,i,n,r,o){"use strict"
+var t,s,l,u,c,d,m
 function p(e,a,i,n){i&&Object.defineProperty(e,a,{enumerable:i.enumerable,configurable:i.configurable,writable:i.writable,value:i.initializer?i.initializer.call(n):void 0})}function h(e,a,i){return a in e?Object.defineProperty(e,a,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[a]=i,e}function v(e,a,i,n,r){var o={}
 return Object.keys(n).forEach((function(e){o[e]=n[e]})),o.enumerable=!!o.enumerable,o.configurable=!!o.configurable,("value"in o||o.initializer)&&(o.writable=!0),o=i.slice().reverse().reduce((function(i,n){return n(e,a,i)||i}),o),r&&void 0!==o.initializer&&(o.value=o.initializer?o.initializer.call(r):void 0,o.initializer=void 0),void 0===o.initializer&&(Object.defineProperty(e,a,o),o=null),o}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 let k="undefined"!=typeof FastBoot
 const g="routeDidChange"
-let b=(s=(0,n.inject)("page-title"),l=(0,n.inject)("-document"),u=class extends n.default{constructor(){super(...arguments),p(this,"pageTitle",c,this),p(this,"router",d,this),p(this,"document",m,this),h(this,"tokens",[]),h(this,"_defaultConfig",{separator:" | ",prepend:!0,replace:null}),h(this,"scheduleTitleUpdate",(()=>{(0,i.scheduleOnce)("afterRender",this,this._updateTitle)})),this._validateExistingTitleElement()
+let b=(t=(0,n.inject)("page-title"),s=(0,n.inject)("router"),l=(0,n.inject)("-document"),u=class extends n.default{constructor(){super(...arguments),p(this,"pageTitle",c,this),p(this,"router",d,this),p(this,"document",m,this),h(this,"tokens",[]),h(this,"_defaultConfig",{separator:" | ",prepend:!0,replace:null}),h(this,"scheduleTitleUpdate",(()=>{(0,i.scheduleOnce)("afterRender",this,this._updateTitle)})),this._validateExistingTitleElement()
 let e=(0,a.getOwner)(this).resolveRegistration("config:environment")
 e.pageTitle&&["separator","prepend","replace"].forEach((a=>{(0,r.isEmpty)(e.pageTitle[a])||(this._defaultConfig[a]=e.pageTitle[a])})),this.router.on(g,this.scheduleTitleUpdate)}applyTokenDefaults(e){let a=this._defaultConfig.separator,i=this._defaultConfig.prepend,n=this._defaultConfig.replace
 null==e.separator&&(e.separator=a),null==e.prepend&&null!=i&&(e.prepend=i),null==e.replace&&null!=n&&(e.replace=n)}inheritFromPrevious(e){let a=e.previous
@@ -3795,14 +3795,14 @@ break}i.unshift(n)}return i}get sortedTokens(){let e=this.visibleTokens,a=!0,i=[
 return e.forEach((e=>{if(e.front)r.unshift(e)
 else if(e.prepend){a&&(a=!1,i=[],n.push(i))
 let r=i[0]
-r&&((e=(0,o.assign)({},e)).separator=r.separator),i.unshift(e)}else a||(a=!0,i=[],n.push(i)),i.push(e)})),r.concat(n.reduce(((e,a)=>e.concat(a)),[]))}toString(){let e=this.sortedTokens,a=[]
+r&&((e={...e}).separator=r.separator),i.unshift(e)}else a||(a=!0,i=[],n.push(i)),i.push(e)})),r.concat(n.reduce(((e,a)=>e.concat(a)),[]))}toString(){let e=this.sortedTokens,a=[]
 for(let i=0,n=e.length;i<n;i++){let r=e[i]
 r.title&&(a.push(r.title),i+1<n&&a.push(r.separator))}return a.join("")}willDestroy(){super.willDestroy(),this.router.off(g,this.scheduleTitleUpdate)}_updateTitle(){const e=this.toString()
 k?this.updateFastbootTitle(e):this.document.title=e,this.pageTitle.titleDidUpdate(e)}_validateExistingTitleElement(){}_findTokenById(e){return this.tokens.filter((a=>a.id===e))[0]}updateFastbootTitle(e){if(!k)return
 const a=this.document.head,i=a.childNodes
 for(let o=0;o<i.length;o++){let e=i[o]
 "title"===e.nodeName.toLowerCase()&&a.removeChild(e)}let n=this.document.createElement("title"),r=this.document.createTextNode(e)
-n.appendChild(r),a.appendChild(n)}},c=v(u.prototype,"pageTitle",[s],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),d=v(u.prototype,"router",[n.inject],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),m=v(u.prototype,"document",[l],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),u)
+n.appendChild(r),a.appendChild(n)}},c=v(u.prototype,"pageTitle",[t],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),d=v(u.prototype,"router",[s],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),m=v(u.prototype,"document",[l],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),u)
 e.default=b})),define("ember-page-title/services/page-title",["exports","@ember/service"],(function(e,a){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 class i extends a.default{titleDidUpdate(){}}e.default=i})),define("ember-resolver/features",[],(function(){})),define("ember-resolver/index",["exports","ember-resolver/resolvers/classic"],(function(e,a){"use strict"
