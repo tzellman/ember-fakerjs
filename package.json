@@ -1,6 +1,6 @@
 {
   "name": "ember-fakerjs",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Faker.js template helpers for Ember.",
   "keywords": [
     "ember-addon",
