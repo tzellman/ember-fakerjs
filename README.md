@@ -69,8 +69,8 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 [npm-badge-img]: https://badge.fury.io/js/ember-fakerjs.svg
 [npm-badge-link]: http://badge.fury.io/js/ember-fakerjs
-[build-status-img]: https://github.com/tzellman/ember-fakerjs/workflows/Build/badge.svg?branch=master&event=push
-[build-status-link]: https://github.com/tzellman/ember-fakerjs/actions?query=workflow%3A%22Build%22
+[build-status-img]: https://github.com/tzellman/ember-fakerjs/workflows/CI/badge.svg?branch=master&event=push
+[build-status-link]: https://github.com/tzellman/ember-fakerjs/actions?query=workflow%3A%22CI%22
 [npm-downloads-img]: https://img.shields.io/npm/dt/ember-fakerjs.svg
 [ember-observer-badge]: http://emberobserver.com/badges/ember-fakerjs.svg
 [ember-observer-url]: http://emberobserver.com/addons/ember-fakerjs

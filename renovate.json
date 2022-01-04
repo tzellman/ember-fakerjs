@@ -24,7 +24,7 @@
         {
             "paths": ["+(package.json)"],
             "rangeStrategy": "bump",
-            "ignoreDeps": ["ember-cli", "tailwindcss"]
+            "ignoreDeps": ["ember-cli", "tailwindcss", "faker"]
         },
         {
             "matchPackageNames": ["husky"],

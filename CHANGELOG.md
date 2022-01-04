@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.0
+
+🎉 This is the first major release of ember-fakerjs! 🎉
+
+#### Changes
+
+-   Updated to Ember CI 4.1.0
+-   Updated to use ember-auto-import 2.x
+-   Updated most other dependencies to the latest
+
 ### 0.6.0
 
 This is a minor release that adds no new functionality to the core addon. Primarily dependency updates.
