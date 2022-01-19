@@ -40,7 +40,7 @@
     "faker": "5.5.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
+    "@commitlint/cli": "^16.0.3",
     "@commitlint/config-conventional": "^16.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
